@@ -1,3 +1,4 @@
+<!--As funções são semelhantes em todas as páginas, com algumas mudanças básicas como dados da table e coisas assim. O thead foi completamente gerado usando javascript, utilizando um for para gerar o tr e outro for para gerar o th. Nos dados da table, na parte da senha foi usado uma função de revelação e ocultação das senhas ao passar o mouse, onde inicialmente todas as senhas são "censurado", mas com "style.color transparent" e ao passar o mouse tornam-se visíveis, ao tirar o mouse voltam a ser transparentes. Fui utilizado também if para poder mudar de página.-->
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -198,10 +199,10 @@
         ["ID", "Nome de Usuário", "Data de Nascimento", "E-mail", "Senha"],
       ];
 
-      // Selecione o corpo da tabela
+      // Selecionando o início da tabela
       var thead = document.querySelector("#ttable thead");
 
-      // Preencha a tabela com os dados gerados
+      // Preenchendo a tabela com os dados gerados
       for (var i = 0; i < data.length; i++) {
         var row = document.createElement("tr");
 
